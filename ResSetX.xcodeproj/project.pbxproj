@@ -6,13 +6,95 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		431039BF2CF18011002BB2F2 /* em_proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039BB2CF18011002BB2F2 /* em_proxy.swift */; };
+		431039C02CF18011002BB2F2 /* minimuxer-helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039BD2CF18011002BB2F2 /* minimuxer-helpers.swift */; };
+		431039C12CF18011002BB2F2 /* SwiftBridgeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039BE2CF18011002BB2F2 /* SwiftBridgeCore.swift */; };
+		431039C22CF18011002BB2F2 /* minimuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039BC2CF18011002BB2F2 /* minimuxer.swift */; };
+		431039DB2CF1802B002BB2F2 /* ByteBuffer-foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039D52CF1802B002BB2F2 /* ByteBuffer-foundation.swift */; };
+		431039DC2CF1802B002BB2F2 /* ByteBuffer-int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039CD2CF1802B002BB2F2 /* ByteBuffer-int.swift */; };
+		431039DD2CF1802B002BB2F2 /* Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039C72CF1802B002BB2F2 /* Base64.swift */; };
+		431039DE2CF1802B002BB2F2 /* ByteBuffer-core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039CB2CF1802B002BB2F2 /* ByteBuffer-core.swift */; };
+		431039DF2CF1802B002BB2F2 /* ByteBuffer-views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039D02CF1802B002BB2F2 /* ByteBuffer-views.swift */; };
+		431039E02CF1802B002BB2F2 /* MBDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039C42CF1802B002BB2F2 /* MBDB.swift */; };
+		431039E12CF1802B002BB2F2 /* Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039C32CF1802B002BB2F2 /* Backup.swift */; };
+		431039E22CF1802B002BB2F2 /* ByteBuffer-conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039CA2CF1802B002BB2F2 /* ByteBuffer-conversions.swift */; };
+		431039E32CF1802B002BB2F2 /* ByteBuffer-hexdump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039CC2CF1802B002BB2F2 /* ByteBuffer-hexdump.swift */; };
+		431039E42CF1802B002BB2F2 /* ByteBuffer-multi-int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039CF2CF1802B002BB2F2 /* ByteBuffer-multi-int.swift */; };
+		431039E52CF1802B002BB2F2 /* ByteBuffer-aux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039C92CF1802B002BB2F2 /* ByteBuffer-aux.swift */; };
+		431039E62CF1802B002BB2F2 /* ByteBuffer-lengthPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039CE2CF1802B002BB2F2 /* ByteBuffer-lengthPrefix.swift */; };
+		431039E72CF1802B002BB2F2 /* IntegerBitPacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039D22CF1802B002BB2F2 /* IntegerBitPacking.swift */; };
+		431039E82CF1802B002BB2F2 /* PointerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039D72CF1802B002BB2F2 /* PointerHelpers.swift */; };
+		431039E92CF1802B002BB2F2 /* IntegerTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039D32CF1802B002BB2F2 /* IntegerTypes.swift */; };
+		431039EA2CF1802B002BB2F2 /* CircularBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039D12CF1802B002BB2F2 /* CircularBuffer.swift */; };
+		431039EF2CF18060002BB2F2 /* MobileDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431039ED2CF18060002BB2F2 /* MobileDevice.swift */; };
+		431039F32CF180BB002BB2F2 /* libEMProxy.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 431039F12CF180BB002BB2F2 /* libEMProxy.dylib */; };
+		431039F42CF180BB002BB2F2 /* libEMProxy.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 431039F12CF180BB002BB2F2 /* libEMProxy.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		431039F52CF180BB002BB2F2 /* libimobiledevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 431039F22CF180BB002BB2F2 /* libimobiledevice.dylib */; };
+		431039F62CF180BB002BB2F2 /* libimobiledevice.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 431039F22CF180BB002BB2F2 /* libimobiledevice.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		437DF09B2CF39542005517E1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 437DF09A2CF39542005517E1 /* LICENSE */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		431039F72CF180BB002BB2F2 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				431039F62CF180BB002BB2F2 /* libimobiledevice.dylib in Embed Libraries */,
+				431039F42CF180BB002BB2F2 /* libEMProxy.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		431039B02CF17F66002BB2F2 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = Shared/Bridge.h; sourceTree = SOURCE_ROOT; };
+		431039BB2CF18011002BB2F2 /* em_proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = em_proxy.swift; path = Shared/SparseBox/include/em_proxy.swift; sourceTree = SOURCE_ROOT; };
+		431039BC2CF18011002BB2F2 /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = minimuxer.swift; path = Shared/SparseBox/include/minimuxer.swift; sourceTree = SOURCE_ROOT; };
+		431039BD2CF18011002BB2F2 /* minimuxer-helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "minimuxer-helpers.swift"; path = "Shared/SparseBox/include/minimuxer-helpers.swift"; sourceTree = SOURCE_ROOT; };
+		431039BE2CF18011002BB2F2 /* SwiftBridgeCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftBridgeCore.swift; path = Shared/SparseBox/include/SwiftBridgeCore.swift; sourceTree = SOURCE_ROOT; };
+		431039C32CF1802B002BB2F2 /* Backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backup.swift; sourceTree = "<group>"; };
+		431039C42CF1802B002BB2F2 /* MBDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDB.swift; sourceTree = "<group>"; };
+		431039C72CF1802B002BB2F2 /* Base64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64.swift; sourceTree = "<group>"; };
+		431039C92CF1802B002BB2F2 /* ByteBuffer-aux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-aux.swift"; sourceTree = "<group>"; };
+		431039CA2CF1802B002BB2F2 /* ByteBuffer-conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-conversions.swift"; sourceTree = "<group>"; };
+		431039CB2CF1802B002BB2F2 /* ByteBuffer-core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-core.swift"; sourceTree = "<group>"; };
+		431039CC2CF1802B002BB2F2 /* ByteBuffer-hexdump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-hexdump.swift"; sourceTree = "<group>"; };
+		431039CD2CF1802B002BB2F2 /* ByteBuffer-int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-int.swift"; sourceTree = "<group>"; };
+		431039CE2CF1802B002BB2F2 /* ByteBuffer-lengthPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-lengthPrefix.swift"; sourceTree = "<group>"; };
+		431039CF2CF1802B002BB2F2 /* ByteBuffer-multi-int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-multi-int.swift"; sourceTree = "<group>"; };
+		431039D02CF1802B002BB2F2 /* ByteBuffer-views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-views.swift"; sourceTree = "<group>"; };
+		431039D12CF1802B002BB2F2 /* CircularBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularBuffer.swift; sourceTree = "<group>"; };
+		431039D22CF1802B002BB2F2 /* IntegerBitPacking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerBitPacking.swift; sourceTree = "<group>"; };
+		431039D32CF1802B002BB2F2 /* IntegerTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerTypes.swift; sourceTree = "<group>"; };
+		431039D52CF1802B002BB2F2 /* ByteBuffer-foundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ByteBuffer-foundation.swift"; sourceTree = "<group>"; };
+		431039D72CF1802B002BB2F2 /* PointerHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointerHelpers.swift; sourceTree = "<group>"; };
+		431039ED2CF18060002BB2F2 /* MobileDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDevice.swift; sourceTree = "<group>"; };
+		431039F12CF180BB002BB2F2 /* libEMProxy.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libEMProxy.dylib; path = Shared/libEMProxy.dylib; sourceTree = "<group>"; };
+		431039F22CF180BB002BB2F2 /* libimobiledevice.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libimobiledevice.dylib; path = Shared/libimobiledevice.dylib; sourceTree = "<group>"; };
+		437DF09A2CF39542005517E1 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		43E5249E2CF17EA400C0851F /* ResSetX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResSetX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		43103B9F2CF19BCF002BB2F2 /* Exceptions for "ResSetX" folder in "ResSetX" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 43E5249D2CF17EA400C0851F /* ResSetX */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		43E524A02CF17EA400C0851F /* ResSetX */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				43103B9F2CF19BCF002BB2F2 /* Exceptions for "ResSetX" folder in "ResSetX" target */,
+			);
 			path = ResSetX;
 			sourceTree = "<group>";
 		};
@@ -23,16 +105,134 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431039F52CF180BB002BB2F2 /* libimobiledevice.dylib in Frameworks */,
+				431039F32CF180BB002BB2F2 /* libEMProxy.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431039AF2CF17F66002BB2F2 /* SparseRestore */ = {
+			isa = PBXGroup;
+			children = (
+				431039EE2CF18060002BB2F2 /* MobileDevice */,
+				431039C62CF1802B002BB2F2 /* SparseRestore */,
+				431039DA2CF1802B002BB2F2 /* SwiftNIO */,
+				431039BA2CF17FE7002BB2F2 /* Import */,
+			);
+			path = SparseRestore;
+			sourceTree = "<group>";
+		};
+		431039B32CF17F66002BB2F2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				431039AF2CF17F66002BB2F2 /* SparseRestore */,
+				431039B02CF17F66002BB2F2 /* Bridge.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		431039BA2CF17FE7002BB2F2 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				431039BB2CF18011002BB2F2 /* em_proxy.swift */,
+				431039BC2CF18011002BB2F2 /* minimuxer.swift */,
+				431039BD2CF18011002BB2F2 /* minimuxer-helpers.swift */,
+				431039BE2CF18011002BB2F2 /* SwiftBridgeCore.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
+		431039C62CF1802B002BB2F2 /* SparseRestore */ = {
+			isa = PBXGroup;
+			children = (
+				431039C32CF1802B002BB2F2 /* Backup.swift */,
+				431039C42CF1802B002BB2F2 /* MBDB.swift */,
+			);
+			name = SparseRestore;
+			path = Shared/SparseBox/Sources/SparseRestore;
+			sourceTree = SOURCE_ROOT;
+		};
+		431039C82CF1802B002BB2F2 /* _NIOBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				431039C72CF1802B002BB2F2 /* Base64.swift */,
+			);
+			path = _NIOBase64;
+			sourceTree = "<group>";
+		};
+		431039D42CF1802B002BB2F2 /* NIOCore */ = {
+			isa = PBXGroup;
+			children = (
+				431039C92CF1802B002BB2F2 /* ByteBuffer-aux.swift */,
+				431039CA2CF1802B002BB2F2 /* ByteBuffer-conversions.swift */,
+				431039CB2CF1802B002BB2F2 /* ByteBuffer-core.swift */,
+				431039CC2CF1802B002BB2F2 /* ByteBuffer-hexdump.swift */,
+				431039CD2CF1802B002BB2F2 /* ByteBuffer-int.swift */,
+				431039CE2CF1802B002BB2F2 /* ByteBuffer-lengthPrefix.swift */,
+				431039CF2CF1802B002BB2F2 /* ByteBuffer-multi-int.swift */,
+				431039D02CF1802B002BB2F2 /* ByteBuffer-views.swift */,
+				431039D12CF1802B002BB2F2 /* CircularBuffer.swift */,
+				431039D22CF1802B002BB2F2 /* IntegerBitPacking.swift */,
+				431039D32CF1802B002BB2F2 /* IntegerTypes.swift */,
+			);
+			path = NIOCore;
+			sourceTree = "<group>";
+		};
+		431039D62CF1802B002BB2F2 /* NIOFoundationCompat */ = {
+			isa = PBXGroup;
+			children = (
+				431039D52CF1802B002BB2F2 /* ByteBuffer-foundation.swift */,
+			);
+			path = NIOFoundationCompat;
+			sourceTree = "<group>";
+		};
+		431039D82CF1802B002BB2F2 /* NIOPosix */ = {
+			isa = PBXGroup;
+			children = (
+				431039D72CF1802B002BB2F2 /* PointerHelpers.swift */,
+			);
+			path = NIOPosix;
+			sourceTree = "<group>";
+		};
+		431039DA2CF1802B002BB2F2 /* SwiftNIO */ = {
+			isa = PBXGroup;
+			children = (
+				431039C82CF1802B002BB2F2 /* _NIOBase64 */,
+				431039D42CF1802B002BB2F2 /* NIOCore */,
+				431039D62CF1802B002BB2F2 /* NIOFoundationCompat */,
+				431039D82CF1802B002BB2F2 /* NIOPosix */,
+			);
+			name = SwiftNIO;
+			path = Shared/SparseBox/Sources/SwiftNIO;
+			sourceTree = SOURCE_ROOT;
+		};
+		431039EE2CF18060002BB2F2 /* MobileDevice */ = {
+			isa = PBXGroup;
+			children = (
+				431039ED2CF18060002BB2F2 /* MobileDevice.swift */,
+			);
+			name = MobileDevice;
+			path = Shared/SparseBox/Sources/MobileDevice;
+			sourceTree = SOURCE_ROOT;
+		};
+		431039F02CF180BB002BB2F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				431039F12CF180BB002BB2F2 /* libEMProxy.dylib */,
+				431039F22CF180BB002BB2F2 /* libimobiledevice.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		43E524952CF17EA400C0851F = {
 			isa = PBXGroup;
 			children = (
+				437DF09A2CF39542005517E1 /* LICENSE */,
+				431039B32CF17F66002BB2F2 /* Shared */,
 				43E524A02CF17EA400C0851F /* ResSetX */,
+				431039F02CF180BB002BB2F2 /* Frameworks */,
 				43E5249F2CF17EA400C0851F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +255,7 @@
 				43E5249A2CF17EA400C0851F /* Sources */,
 				43E5249B2CF17EA400C0851F /* Frameworks */,
 				43E5249C2CF17EA400C0851F /* Resources */,
+				431039F72CF180BB002BB2F2 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -94,6 +295,8 @@
 			);
 			mainGroup = 43E524952CF17EA400C0851F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 43E5249F2CF17EA400C0851F /* Products */;
 			projectDirPath = "";
@@ -109,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437DF09B2CF39542005517E1 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +323,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431039BF2CF18011002BB2F2 /* em_proxy.swift in Sources */,
+				431039C02CF18011002BB2F2 /* minimuxer-helpers.swift in Sources */,
+				431039C12CF18011002BB2F2 /* SwiftBridgeCore.swift in Sources */,
+				431039C22CF18011002BB2F2 /* minimuxer.swift in Sources */,
+				431039DB2CF1802B002BB2F2 /* ByteBuffer-foundation.swift in Sources */,
+				431039DC2CF1802B002BB2F2 /* ByteBuffer-int.swift in Sources */,
+				431039DD2CF1802B002BB2F2 /* Base64.swift in Sources */,
+				431039DE2CF1802B002BB2F2 /* ByteBuffer-core.swift in Sources */,
+				431039DF2CF1802B002BB2F2 /* ByteBuffer-views.swift in Sources */,
+				431039E02CF1802B002BB2F2 /* MBDB.swift in Sources */,
+				431039E12CF1802B002BB2F2 /* Backup.swift in Sources */,
+				431039E22CF1802B002BB2F2 /* ByteBuffer-conversions.swift in Sources */,
+				431039E32CF1802B002BB2F2 /* ByteBuffer-hexdump.swift in Sources */,
+				431039E42CF1802B002BB2F2 /* ByteBuffer-multi-int.swift in Sources */,
+				431039EF2CF18060002BB2F2 /* MobileDevice.swift in Sources */,
+				431039E52CF1802B002BB2F2 /* ByteBuffer-aux.swift in Sources */,
+				431039E62CF1802B002BB2F2 /* ByteBuffer-lengthPrefix.swift in Sources */,
+				431039E72CF1802B002BB2F2 /* IntegerBitPacking.swift in Sources */,
+				431039E82CF1802B002BB2F2 /* PointerHelpers.swift in Sources */,
+				431039E92CF1802B002BB2F2 /* IntegerTypes.swift in Sources */,
+				431039EA2CF1802B002BB2F2 /* CircularBuffer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -234,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -251,23 +476,34 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ResSetX/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = W734VT4WKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "Shared/SparseBox/include/**";
+				INFOPLIST_FILE = ResSetX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ResSetX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ResSetX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/Bridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -280,23 +516,34 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ResSetX/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = W734VT4WKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "Shared/SparseBox/include/**";
+				INFOPLIST_FILE = ResSetX/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ResSetX;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ResSetX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Shared/Bridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
