@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FluidGradient
 
 struct ContentView: View {
     var body: some View {
